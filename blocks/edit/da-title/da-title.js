@@ -184,6 +184,12 @@ export default class DaTitle extends LitElement {
         Preview
       </button>
       <button
+        @click=${() => this.handleAction('preview')}
+        class="con-button blue da-title-action"
+        aria-label="Send">
+        Send For Review
+      </button>
+      <button
         @click=${() => this.handleAction('publish')}
         class="con-button blue da-title-action"
         aria-label="Send">
